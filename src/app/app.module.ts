@@ -3,16 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CalculadorTintaComponent } from './calculador-tinta/calculador-tinta.component';
-
+import { PaintCalculatorModule } from './calculador-tinta/paint-calculator.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
-    CalculadorTintaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PaintCalculatorModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,17 +7,17 @@
     <p>Número de Janelas:</p>
     <input type="number" min="1" value="0" #doorNumber/>
     <br><br>
-    <button class="btn btn-primary" #saveButton>Salvar Parede</button>
-    <button class="btn btn-primary"  #finalButton>Resultado Final</button>
-    <button class="btn btn-primary" #limparButton>Limpar Valores</button>
+    <button class="btn btn-primary" (click)="allValidation()"#saveButton>Salvar Parede</button>
+    <button class="btn btn-primary"  (click)="finalResult()"#finalButton>Resultado Final</button>
+    <button class="btn btn-primary" (click)="refreshAll($event)"#limparButton>Limpar Valores</button>
 <div class="alert alert-info" role="altert">
     <h5>ÁREA ÚTIL TOTAL DE CADA PAREDE EM QUADRADO</h5>
     <ul>
-        <li>
-           
+        <li *ngFor="let wall of walls">
+           {{wall}}
         </li>
     </ul>
     <p>
-       
+       {{result}}
     </p>
 </div>
