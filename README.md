@@ -1,27 +1,53 @@
 # Meuteste
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
 
-## Development server
+Este Projeto foi Desenvolvido por Bruno Pessoa Nunes de Melo, ele consiste em calcular a quantidade necessária de litros de tinta serão necessários para pintar uma sala com quatros uma paredes com determinado número de janelas, depedendo da sua altura e largura. As regras de negócio foram adicionadas conforme foram requisitadas. 
+## Ferramentas?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Node 14.19.4
+Typescript v4
+Angular 13.3.4
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Como Rodar 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+No meu caso como estou utilizando o sistema operacional Ubuntu que é uma das extensões do linux, ao tentar instalar o projeto eu adiciono o comando 'sudo' em cada comadno
 
-## Running unit tests
+# 1º Passo
+Instale o Node.js através do terminal de comando utilizando este tutorial aqui: [link do Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04-pt), mas para acelerar o processo vou digitar os comando principais para a instalação 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+Para obter a versão mais atualizada do gerenciado de pacotes 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+$ sudo apt update 
 
-## Further help
+Em seguida instale o node na sua máquina 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+$sudo apt install node.js
+
+# 2º Passo: Instale o Angular CLI 
+
+Ao instalar o node agora é preciso instalar o Angular CLI, então digite o comando: 
+
+$ npm install -g @angular/cli
+
+se estiver no linux, adicione o 'sudo' na frente do comando. 
+
+#3º Passo: Instale o Typescript 
+
+$ npm install -g typescript
+
+
+## Executando o projeto
+
+# 1º Passo: Clone o projeto
+
+no terminal que você estiver utilizando, crie um diretório e clone o projeto 
+ $ https://gitlab.com/brunopeople/MeuTeste-RDpublic
+
+# 2º Passo: Baixe as depedências do projeto
+
+Depois que clonar o projeto, baixe as suas depedências com o comando:
+
+$ npm install
