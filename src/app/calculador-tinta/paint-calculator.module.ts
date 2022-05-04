@@ -9,4 +9,4 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ]
 })
-export class CalculadorTintaModule { }
+export class PaintCalculatorModule { }
